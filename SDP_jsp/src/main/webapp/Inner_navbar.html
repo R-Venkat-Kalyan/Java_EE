@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EP Project</title>
+    <link href="https://unpkg.com/tailwindcss@^2.2.4/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .login-button {
+            background-color: #3B82F6;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #34D399;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a class="text-white text-xl font-semibold" href="#">
+                        <img class="h-8" src="images/logo1.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="flex-grow">
+                    <ul class="flex justify-center space-x-4">
+                        <li><a class="text-white hover:text-pink-600" href="Home.html">Home</a></li>
+                        <li><a class="text-white hover:text-pink-600" href="Feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="login.html">
+                    <button id="logoutButton" class="login-button text-white font-bold py-2 px-4 rounded-full">
+                        LogOut
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

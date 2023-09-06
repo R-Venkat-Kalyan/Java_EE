@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Management System</title>
+     <link href="https://unpkg.com/tailwindcss@^2.2.4/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Exo', sans-serif;
+        }
+        
+        .navbar {
+            background-image: linear-gradient(to right, #8360c3, #2ebf91);
+            color: #fff;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        
+        .navbar::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, #8360c3, #2ebf91);
+            z-index: -1;
+        }
+        
+        .navbar-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .navbar span {
+            animation: colorChange 4s infinite;
+        }
+        
+        .navbar h6 {
+            font-size: 12px;
+            color: black;
+            margin-top: 5px;
+            text-align: center;
+            width: 80%;
+        }
+        
+        .navbar:hover span,
+        .navbar:hover h6 {
+            color: #fff;
+        }
+        
+        @keyframes colorChange {
+            0%, 20% {
+                color: #fff;
+            }
+        
+            40%, 60% {
+                color: #ff512f;
+            }
+        
+            80%, 100% {
+                color: #190a05;
+            }
+        }
+        
+        .container {
+            margin-top: 10vh;
+            text-align: center;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                font-size: 18px;
+            }
+        
+            .navbar h6 {
+                font-size: 10px;
+            }
+        }
+
+
+
+        .login-button {
+            background-color: #3B82F6;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #34D399;
+        }
+
+body {
+      background: linear-gradient(to bottom, rgb(255, 87, 34), rgb(255, 127, 80), rgb(255, 193, 7), rgb(255, 105, 180), rgb(255, 218, 185));
+      height: 100%;
+    }
+</style>
+
+</head>
+<body>
+    <div>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <span>Welcome to Student Management System</span>
+            <h6>Used for Managing Student Details</h6>
+        </div>
+    </nav>
+   </div>
+ <br><br><br><br>
+ <div>
+    <nav class="bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a class="text-white text-xl font-semibold" href="#">
+                        <img class="h-8" src="images/logo1.png" alt="Logo">
+                    </a> 
+                    <h1 class="text-white hover:text-pink-600"><b>&nbsp;&nbsp;UMS</b></h1>
+                </div>
+                <div class="flex-grow">
+                    <ul class="flex justify-center space-x-4">
+                        <li><a class="text-white hover:text-pink-600" href="#">Home</a></li>
+                        <li><a class="text-white hover:text-pink-600" href="#AboutUs">About Us</a></li>
+                        <li><a class="text-white hover:text-pink-600" href="#ContactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+                <a href = "login.html">
+                    <button class="login-button text-white font-bold py-2 px-4 rounded-full">
+                        Login
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+<br>
+
+<div>
+<iframe src="carousel.html" height="500px" width = "100%" scrolling="no">
+</iframe>
+</div>
+
+
+<br>
+
+<div id = "AboutUs">
+<iframe src="AboutUs.html" height="500px" width = "100%" scrolling="no">
+</iframe>
+</div>
+
+<br>
+<div id = "ContactUs">
+<iframe src="contactus.html" height="400px" width = "100%" scrolling="no">
+</iframe>
+</div>
+</body>
+</html>
